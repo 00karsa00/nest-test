@@ -1,0 +1,28 @@
+### Create a Todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "title": "Finish reading a book",
+    "description": "Complete the last three chapters of the book"
+}
+
+### Get All Todos
+GET http://localhost:3000/todos
+Content-Type: application/json
+
+### Get a Specific Todo
+GET http://localhost:3000/todos/2
+Content-Type: application/json
+
+### Update a Todo
+PUT http://localhost:3000/todos/3
+Content-Type: application/json
+
+{
+    "isCompleted": true
+}
+
+### Delete a Todo
+DELETE http://localhost:3000/todos/2
+Content-Type: application/json
